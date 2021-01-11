@@ -14,10 +14,12 @@
 		D5252E822594A3B4000D4DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5252E802594A3B4000D4DC9 /* LaunchScreen.storyboard */; };
 		D5252E992594A5CB000D4DC9 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5252E982594A5CB000D4DC9 /* RequestHandler.swift */; };
 		D5252EA72594B1E6000D4DC9 /* Codable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5252EA62594B1E6000D4DC9 /* Codable+JSON.swift */; };
-		D5252EAC25962BB4000D4DC9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5252EAB25962BB4000D4DC9 /* Result.swift */; };
 		D5252EB625963167000D4DC9 /* StarWarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5252EB525963167000D4DC9 /* StarWarManager.swift */; };
-		D5EE4682259757A400DE99AB /* StarWarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EE4680259757A400DE99AB /* StarWarViewCell.swift */; };
-		D5EE4683259757A400DE99AB /* StarWarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EE4681259757A400DE99AB /* StarWarViewCell.xib */; };
+		D5889E9D25AA275900FA9FB1 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5889E9C25AA275900FA9FB1 /* DataBaseManager.swift */; };
+		D5889EA125AA281300FA9FB1 /* StarWarRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5889EA025AA281300FA9FB1 /* StarWarRealmModel.swift */; };
+		D5889EA525AA288400FA9FB1 /* StarWarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5889EA425AA288400FA9FB1 /* StarWarResult.swift */; };
+		D5889EB925AA478F00FA9FB1 /* StarWarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5889EB725AA478F00FA9FB1 /* StarWarTableViewCell.swift */; };
+		D5889EBA25AA478F00FA9FB1 /* StarWarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5889EB825AA478F00FA9FB1 /* StarWarTableViewCell.xib */; };
 		D5EE468E25975A4600DE99AB /* StarWarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EE468C25975A4600DE99AB /* StarWarTableViewController.swift */; };
 		D5EE468F25975A4600DE99AB /* StarWarTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EE468D25975A4600DE99AB /* StarWarTableViewController.xib */; };
 /* End PBXBuildFile section */
@@ -34,10 +36,12 @@
 		D5252E832594A3B4000D4DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5252E982594A5CB000D4DC9 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		D5252EA62594B1E6000D4DC9 /* Codable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+JSON.swift"; sourceTree = "<group>"; };
-		D5252EAB25962BB4000D4DC9 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D5252EB525963167000D4DC9 /* StarWarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarManager.swift; sourceTree = "<group>"; };
-		D5EE4680259757A400DE99AB /* StarWarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarViewCell.swift; sourceTree = "<group>"; };
-		D5EE4681259757A400DE99AB /* StarWarViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarWarViewCell.xib; sourceTree = "<group>"; };
+		D5889E9C25AA275900FA9FB1 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		D5889EA025AA281300FA9FB1 /* StarWarRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarRealmModel.swift; sourceTree = "<group>"; };
+		D5889EA425AA288400FA9FB1 /* StarWarResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarResult.swift; sourceTree = "<group>"; };
+		D5889EB725AA478F00FA9FB1 /* StarWarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarTableViewCell.swift; sourceTree = "<group>"; };
+		D5889EB825AA478F00FA9FB1 /* StarWarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarWarTableViewCell.xib; sourceTree = "<group>"; };
 		D5EE468C25975A4600DE99AB /* StarWarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarTableViewController.swift; sourceTree = "<group>"; };
 		D5EE468D25975A4600DE99AB /* StarWarTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarWarTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,10 +96,10 @@
 		D5252E742594A3B2000D4DC9 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				D5252E752594A3B2000D4DC9 /* AppDelegate.swift */,
 				D5252E772594A3B2000D4DC9 /* SceneDelegate.swift */,
+				D5252E752594A3B2000D4DC9 /* AppDelegate.swift */,
+				D5889E9F25AA27E300FA9FB1 /* Models */,
 				D5252EB425963148000D4DC9 /* Manager */,
-				D5252EAE25962D4D000D4DC9 /* Cell */,
 				D5252EA52594B1CB000D4DC9 /* Extensions */,
 				D5252E972594A58D000D4DC9 /* Objects */,
 				D5252E8F2594A4D2000D4DC9 /* Screens */,
@@ -109,6 +113,7 @@
 		D5252E8F2594A4D2000D4DC9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D5252EAE25962D4D000D4DC9 /* Cell */,
 				D5252E902594A4F6000D4DC9 /* View */,
 			);
 			path = Screens;
@@ -135,24 +140,15 @@
 			isa = PBXGroup;
 			children = (
 				D5252EA62594B1E6000D4DC9 /* Codable+JSON.swift */,
-				D5252EAA25962B6B000D4DC9 /* Result */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D5252EAA25962B6B000D4DC9 /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				D5252EAB25962BB4000D4DC9 /* Result.swift */,
-			);
-			path = Result;
 			sourceTree = "<group>";
 		};
 		D5252EAE25962D4D000D4DC9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				D5EE4680259757A400DE99AB /* StarWarViewCell.swift */,
-				D5EE4681259757A400DE99AB /* StarWarViewCell.xib */,
+				D5889EB725AA478F00FA9FB1 /* StarWarTableViewCell.swift */,
+				D5889EB825AA478F00FA9FB1 /* StarWarTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -161,8 +157,18 @@
 			isa = PBXGroup;
 			children = (
 				D5252EB525963167000D4DC9 /* StarWarManager.swift */,
+				D5889E9C25AA275900FA9FB1 /* DataBaseManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		D5889E9F25AA27E300FA9FB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5889EA025AA281300FA9FB1 /* StarWarRealmModel.swift */,
+				D5889EA425AA288400FA9FB1 /* StarWarResult.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +230,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5889EBA25AA478F00FA9FB1 /* StarWarTableViewCell.xib in Resources */,
 				D5252E822594A3B4000D4DC9 /* LaunchScreen.storyboard in Resources */,
 				D5252E7F2594A3B4000D4DC9 /* Assets.xcassets in Resources */,
 				D5EE468F25975A4600DE99AB /* StarWarTableViewController.xib in Resources */,
-				D5EE4683259757A400DE99AB /* StarWarViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,12 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5252EA72594B1E6000D4DC9 /* Codable+JSON.swift in Sources */,
+				D5889E9D25AA275900FA9FB1 /* DataBaseManager.swift in Sources */,
 				D5252E762594A3B2000D4DC9 /* AppDelegate.swift in Sources */,
-				D5252EAC25962BB4000D4DC9 /* Result.swift in Sources */,
+				D5889EB925AA478F00FA9FB1 /* StarWarTableViewCell.swift in Sources */,
+				D5889EA125AA281300FA9FB1 /* StarWarRealmModel.swift in Sources */,
 				D5252E992594A5CB000D4DC9 /* RequestHandler.swift in Sources */,
 				D5252EB625963167000D4DC9 /* StarWarManager.swift in Sources */,
 				D5EE468E25975A4600DE99AB /* StarWarTableViewController.swift in Sources */,
-				D5EE4682259757A400DE99AB /* StarWarViewCell.swift in Sources */,
+				D5889EA525AA288400FA9FB1 /* StarWarResult.swift in Sources */,
 				D5252E782594A3B2000D4DC9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

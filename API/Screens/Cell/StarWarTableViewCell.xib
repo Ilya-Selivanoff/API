@@ -9,32 +9,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="swarWarCellId" id="KGk-i7-Jjw" customClass="StarWarViewCell" customModule="API" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="starWarCellId" id="KGk-i7-Jjw" customClass="StarWarTableViewCell" customModule="API" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjQ-Ux-iM4">
-                        <rect key="frame" x="10" y="10" width="300" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6N-mu-dfA">
+                        <rect key="frame" x="10" y="0.0" width="300" height="44"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="wjQ-Ux-iM4" secondAttribute="bottom" constant="10" id="2Sy-Jg-2yP"/>
-                    <constraint firstItem="wjQ-Ux-iM4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6zV-lR-JKh"/>
-                    <constraint firstItem="wjQ-Ux-iM4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cRd-Ou-vtr"/>
-                    <constraint firstAttribute="trailing" secondItem="wjQ-Ux-iM4" secondAttribute="trailing" constant="10" id="hnu-Hy-LIV"/>
+                    <constraint firstItem="Z6N-mu-dfA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3Fg-bg-Pkg"/>
+                    <constraint firstAttribute="bottom" secondItem="Z6N-mu-dfA" secondAttribute="bottom" id="LxT-kH-3qp"/>
+                    <constraint firstAttribute="trailing" secondItem="Z6N-mu-dfA" secondAttribute="trailing" constant="10" id="RRK-Z3-eR0"/>
+                    <constraint firstItem="Z6N-mu-dfA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cCW-5d-D4E"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="nameLabel" destination="wjQ-Ux-iM4" id="ooq-X4-Cst"/>
+                <outlet property="nameLabel" destination="Z6N-mu-dfA" id="B02-bg-fmr"/>
             </connections>
-            <point key="canvasLocation" x="139" y="66"/>
+            <point key="canvasLocation" x="-145" y="90"/>
         </tableViewCell>
     </objects>
 </document>

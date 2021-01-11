@@ -1,22 +1,22 @@
 //
-//  StarWarViewCell.swift
+//  StarWarTableViewCell.swift
 //  API
 //
-//  Created by Илья Селиванов  on 26.12.2020.
+//  Created by Илья Селиванов  on 10.01.2021.
 //
 
 import UIKit
 
-class StarWarViewCell: UITableViewCell {
-    
-    @IBOutlet weak var nameLabel: UILabel!
+class StarWarTableViewCell: UITableViewCell {
+
+    @IBOutlet private weak var nameLabel: UILabel!
     
     // Set the identifier for the custom cell
-    static let cellId = "swarWarCellId"
+    static let cellId = "starWarCellId"
     
     // Returning the xib file after instantiating it
     static var nib: UINib {
-           return UINib(nibName: String(describing: self), bundle: nil)
+       return UINib(nibName: String(describing: self), bundle: nil)
     }
 
     override func awakeFromNib() {
@@ -28,6 +28,10 @@ class StarWarViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(with model: StarWarResult) {
+        nameLabel.text = model.name
     }
     
 }
